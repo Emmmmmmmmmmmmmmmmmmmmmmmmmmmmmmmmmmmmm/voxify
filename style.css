@@ -1,0 +1,72 @@
+*{
+     /** to disable default value of browsers **/
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box; /** adjust content based on padding : content box adjust paddubg based on content **/
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-image: radial-gradient(
+        rgb(51, 255, 0), 
+        rgb(89, 125, 194),
+        rgb(255, 0, 221)
+    );
+    background-repeat: repeat;
+    height: 100vh; /** maximize height **/
+    background-size: 10px 10px; /** width height **/
+    display: flex; /** flex will enable justify content **/
+    justify-content: center; /** horizontal alignment **/
+    align-items: center; /** vertical alignment **/
+}
+
+main{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px; /** all corners **/
+    padding: 20px; /** around **/
+}
+
+h1{
+    background-color: #9051A8;
+    color: #F1F5F9;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /** top corners only **/
+    border-bottom: 5px solid #5365A4; /** thickness style color **/
+    padding: 5px 0; /**top and bottom only **/
+    font-size: 50px;
+}
+
+select, input, textarea{
+    width: 100%;
+    margin: 10px 0; /**top and bottom only **/
+    padding: 10px;
+    font-size: 20px;
+}
+
+textarea{
+    height: 150px;
+}
+
+div{
+    display: flex; /** for layout **/
+}
+
+/** target button inside div **/
+div button{    
+    background-color: #9051A8;
+    color: #F1F5F4;
+    width: 50%;
+    font-size: 20px;
+    border: 0;
+    border-bottom: 5px solid #5365A4;
+    padding: 10px;
+    margin: 0 10px; /** left and right only **/
+    cursor: pointer;
+    position: relative;
+}
+
+/** will move 2px from top if pressed **/
+div button:active{
+    top: 2px;
+}
